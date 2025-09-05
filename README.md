@@ -1,16 +1,23 @@
-# fashion
+# Fashion Store 🛍️
 
-A new Flutter project.
+تطبيق موبايل لبيع الملابس، الإكسسوارات، والأحذية.
 
-## Getting Started
+## المميزات ✨
 
-This project is a starting point for a Flutter application.
+* عرض المنتجات (ملابس، شوزات، إكسسوارات).
+* تفاصيل المنتج (صورة، وصف، سعر).
+* إضافة المنتجات لعربة التسوق.
 
-A few resources to get you started if this is your first Flutter project:
+## التقنيات 🛠️
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* Flutter
+* Dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## طريقة التشغيل ▶️
+
+```bash
+git clone <repo-url>
+cd fashion-store
+flutter pub get
+flutter run
+```
