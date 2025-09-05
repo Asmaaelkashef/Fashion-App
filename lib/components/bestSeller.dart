@@ -1,78 +1,69 @@
 import 'package:fashion/components/details.dart';
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class ProductGrid extends StatelessWidget {
   ProductGrid({super.key});
 
   final List<Map<String, dynamic>> products = [
     {
-      "name": "Skirt",
+      "name": "skirt_name",
       "price": "24 \$",
-      "desc":
-          "Beautiful skirt from Zara made with soft, high-quality fabric. Designed for both comfort and elegance, perfect for casual outings or semi-formal events.",
+      "desc": "skirt_desc",
       "image": "assets/images/top/2.png",
     },
     {
-      "name": "Dress",
+      "name": "dress1_name",
       "price": "50 \$",
-      "desc":
-          "Stylish Dress from H&M with a modern cut and lightweight material. This versatile piece is perfect for parties, dinners, and chic looks.",
+      "desc": "dress1_desc",
       "image": "assets/images/top/3.png",
     },
     {
-      "name": "Suits",
+      "name": "suit_name",
       "price": "70 \$",
-      "desc":
-          "Elegant slim-fit suit with modern style, tailored for a sharp and professional look. Perfect for business meetings, weddings, or formal events.",
+      "desc": "suit_desc",
       "image": "assets/images/top/7.png",
     },
     {
-      "name": "Jumper",
+      "name": "jumper_name",
       "price": "20 \$",
-      "desc":
-          "Casual pullover with a modern design, crafted from warm yet breathable fabric. Ideal for layering in colder weather while staying stylish.",
+      "desc": "jumper_desc",
       "image": "assets/images/top/1.png",
     },
     {
-      "name": "Dress",
+      "name": "dress2_name",
       "price": "32 \$",
-      "desc":
-          "Elegant pleated dress for a chic look. Made with flowy fabric, this dress ensures comfort while keeping you fashionable during special occasions.",
+      "desc": "dress2_desc",
       "image": "assets/images/top/10.png",
     },
     {
-      "name": "Bag",
+      "name": "bag_name",
       "price": "40 \$",
-      "desc":
-          "Stylish bag from Defacto with a practical design and durable material. Spacious enough for daily essentials while maintaining a trendy appearance.",
+      "desc": "bag_desc",
       "image": "assets/images/top/8.png",
     },
     {
-      "name": "Blouse",
+      "name": "blouse1_name",
       "price": "50 \$",
-      "desc":
-          "Casual cotton blouse, perfect for events and everyday wear. Soft to the touch and breathable, making it a must-have for any wardrobe.",
+      "desc": "blouse1_desc",
       "image": "assets/images/top/5.png",
     },
     {
-      "name": "Dress",
+      "name": "dress3_name",
       "price": "43 \$",
-      "desc":
-          "Stylish dress for summer with a light, airy feel. Designed to keep you comfortable in warm weather while offering a chic, timeless style.",
+      "desc": "dress3_desc",
       "image": "assets/images/top/4.png",
     },
     {
-      "name": "Blouse",
+      "name": "blouse2_name",
       "price": "40 \$",
-      "desc":
-          "Comfortable blouse from ZARA with a relaxed fit and modern detailing. Ideal for pairing with jeans, skirts, or trousers for a smart-casual look.",
+      "desc": "blouse2_desc",
       "image": "assets/images/top/9.png",
     },
     {
-      "name": "Shoes",
+      "name": "shoes_name",
       "price": "60 \$",
-      "desc":
-          "Comfortable shoes for daily workouts and casual wear. Designed with a cushioned sole for extra support and durability, perfect for long hours of walking.",
+      "desc": "shoes_desc",
       "image": "assets/images/top/6.png",
     },
   ];
@@ -133,7 +124,7 @@ class ProductGrid extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          product["name"],
+                          product["name"].toString().tr(),
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
@@ -155,7 +146,7 @@ class ProductGrid extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    product["desc"],
+                    product["desc"].toString().tr(),
                     style: const TextStyle(color: Colors.grey, fontSize: 12),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
@@ -169,4 +160,3 @@ class ProductGrid extends StatelessWidget {
     );
   }
 }
-
